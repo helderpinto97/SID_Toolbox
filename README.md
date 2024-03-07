@@ -1,1 +1,2 @@
-# SID_Toolbox-
+#  Surrogates for Information Dynamics (SID) Toolbox
+
