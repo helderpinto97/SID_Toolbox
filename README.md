@@ -24,4 +24,6 @@ In both demo IS estimation and demo MIR estimation, we demonstrate the steps to 
 
 **References:**
 
-Faes, L., Nollo, G., and Porta, A. (2011). Information domain approach to the investigation of cardiovascular, cardio-pulmonary, and vasculo-pulmonary causal couplings. Frontiers in Physiology 2 NOV. doi:10.3389/fphys.2011.00080
+* Faes, L., Nollo, G., and Porta, A. (2011). Information domain approach to the investigation of cardiovascular, cardio-pulmonary, and vasculo-pulmonary causal couplings. Frontiers in Physiology 2 NOV. doi:10.3389/fphys.2011.00080
+
+* Pinto, H., Lazic, I., Antonacci, Y., Pernice, R., Gu, D., Barà, C., Faes, L., Rocha, A.P. (2024) Testing Dynamic Correlations and Nonlinearity in Bivariate Time Series through Information Measures and Surrogate Data Analysis. _Submitted to Frontiers in Network Physiology_.
