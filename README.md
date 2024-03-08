@@ -22,7 +22,7 @@ In both demo IS estimation and demo MIR estimation, we demonstrate the steps to 
 * applying the measure estimation function with the surr parameter 1 and 2, repeated num surrogates times,
 * obtaining the percentile values and comparing them to the originally estimated measure.
 
-Along with the demo scripts, all the codes used in simulations to test the proposed surrogate framework (Pinto et al., 2024) are presented in the /Simulations folder.
+Along with the demo scripts, all the codes used in simulations to test the proposed surrogate framework (Pinto et al., 2024) are presented in the _/Simulations_ folder.
 
 **References:**
 
