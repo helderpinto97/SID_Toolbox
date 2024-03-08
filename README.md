@@ -4,7 +4,8 @@ MATLAB toolbox with implementations of surrogate techniques for assessing the pr
 
 The parameters for the main estimation functions surr_ISknn and surr_MIRknn are the following:
 * Y - the analyzed multivariate process, organized as a matrix with rows as samples and columns as processes,
-* V - the assigned embedding vector,* jj - index of the column for one investigated process,
+* V - the assigned embedding vector,
+* jj - index of the column for one investigated process,
 * ii - index of the column for the second investigated process (MIR only),
 * k - number of neighbors for the KNN estimation,
 * metric - distance metric for the KNN estimation, and
