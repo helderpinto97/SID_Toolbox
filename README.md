@@ -23,3 +23,5 @@ In both demo IS estimation and demo MIR estimation, we demonstrate the steps to 
 * obtaining the percentile values and comparing them to the originally estimated measure.
 
 **References:**
+
+Faes, L., Nollo, G., and Porta, A. (2011). Information domain approach to the investigation of cardiovascular, cardio-pulmonary, and vasculo-pulmonary causal couplings. Frontiers in Physiology 2 NOV. doi:10.3389/fphys.2011.00080
