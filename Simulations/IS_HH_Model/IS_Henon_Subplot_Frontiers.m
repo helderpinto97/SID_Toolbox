@@ -1,8 +1,8 @@
 %% Create the 2x1 subplot for Frontiers Papers
-clear all; close all; clc;
+clc; clear; close all hidden
 
 %% Import Functions
-addpath('../functions')
+addpath('../auxiliary_functions')
 
 % Load & Save Results of the Surrogates for Significance and Non Linear
 % Dynamics
@@ -25,9 +25,9 @@ clearvars -except Significant_Surr_Results IS_Values NonLinear_Surr_Results delt
 % Plot
 fig=figure;
 fig.WindowState='maximized';
-subplot_tight(1,2,1,[0.13 0.06]);
+subplot_tight(1,2,1,[0.16 0.08]);
 errorbar(delta_x, median(IS_Values), median(IS_Values)-quantile(IS_Values,0.05,1),quantile(IS_Values,0.95,1)-median(IS_Values),'LineWidth',2,'Color','k');
-ylabel('S_Y','FontWeight','bold');
+ylabel('S_Y [nats]','FontWeight','bold');
 ylim([-0.1 2.6]);
 xlabel('\sigma','FontWeight','bold');
 xticks(delta_x);
@@ -35,7 +35,7 @@ xlim([-0.1 3.1]);
 ax=gca;
 ax.FontSize=22;
 
-subplot_tight(1,2,2,[0.13 0.06]);
+subplot_tight(1,2,2,[0.16 0.08]);
 Data=[Significant_Surr_Results' NonLinear_Surr_Results'];
 bar(delta_x,Data);
 ylim([0 115]);
@@ -52,4 +52,4 @@ ax.FontSize=22;
 AddLetters2Plots(fig,{'(a)','(b)'} ,'HShift',[0,0], 'VShift', 0, 'Direction', 'LeftRight','FontSize',20);
 
 % Save Figure
-% exportgraphics(fig,'IS_HenonMap_KNN_errorbar_bar_new.eps','BackgroundColor','none');
+exportgraphics(fig,'IS_HenonMap_KNN_errorbar_bar_new.eps','BackgroundColor','none');

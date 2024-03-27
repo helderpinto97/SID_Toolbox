@@ -1,8 +1,9 @@
 %% Verify if the same results using the Hanning Window for the non linear model
-clear all; close all; clc;
+clc; clear; close all hidden
 
-
-addpath('../../functions')
+%% Import Functions
+addpath('../SID/functions')
+addpath('../auxiliary_functions')
 
 %%% Number of Surrogates
 num_surr=100;

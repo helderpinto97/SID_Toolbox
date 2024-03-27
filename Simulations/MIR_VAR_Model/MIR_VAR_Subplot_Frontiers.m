@@ -1,7 +1,7 @@
-clear all; close all; clc;
+clc; clear; close all hidden
 
 %% Import Functions
-addpath('functions')
+addpath('../auxiliary_functions')
 
 % Load & Save Results of the Surrogates for Significance and Non Linear
 % Dynamics
@@ -34,13 +34,13 @@ htmlGray = [128 128 128]/255;
 % Figure
 fig=figure;
 fig.WindowState='maximized';
-subplot_tight(1,2,1,[0.13 0.07]);
+subplot_tight(1,2,1,[0.16 0.08]);
 errorbar(x, median(MIR_Values,2), median(MIR_Values,2)-quantile(MIR_Values,0.05,2),quantile(MIR_Values,0.95,2)-median(MIR_Values,2),'LineWidth',2,'Color','k','DisplayName','KNN');
 hold on;
 plot(x,MIR_Values_Th,'LineWidth',2,'Color',htmlGray,'DisplayName','Theoretical Value');
 hold off;
 legend('Box','off');
-ylabel('I_{X;Y}','FontWeight','bold');
+ylabel('I_{X;Y} [nats]','FontWeight','bold');
 % ylim([-0.1 2.6]);
 xlabel('$C$','FontWeight','bold','Interpreter','latex');
 xticks(x);
@@ -48,7 +48,7 @@ xlim([-0.05 1.05]);
 ax=gca;
 ax.FontSize=21;
 
-subplot_tight(1,2,2,[0.13 0.07]);
+subplot_tight(1,2,2,[0.16 0.08]);
 Data=[Significant_Surr_Results NonLinear_Surr_Results];
 bar(x,Data);
 ylim([0 115]);
@@ -65,5 +65,5 @@ ax.FontSize=21;
 AddLetters2Plots(fig,{'(a)','(b)'} ,'HShift',[0,0], 'VShift', 0, 'Direction', 'LeftRight','FontSize',20);
 
 % Save Figure
-% exportgraphics(fig,'MIR_VAR_KNN_errorbar_bar_new.eps','BackgroundColor','none');
+exportgraphics(fig,'MIR_VAR_KNN_errorbar_bar_new.eps','BackgroundColor','none');
 

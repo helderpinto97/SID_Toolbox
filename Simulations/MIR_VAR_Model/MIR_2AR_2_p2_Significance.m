@@ -1,9 +1,8 @@
-clc
-clear
-close all force
+clc; clear; close all hidden
 
-%% imports
-addpath('../../functions')
+%% Import Functions
+addpath('../SID/functions')
+addpath('../auxiliary_functions')
 
 %% parameters
 M=2;

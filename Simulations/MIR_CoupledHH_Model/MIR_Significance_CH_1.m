@@ -1,7 +1,9 @@
 %% Coupled Hennon-Hennon MAP - Non Linear Case
-clear all; close all; clc;
+clc; clear; close all hidden
 
-addpath('functions')
+%% Import Functions
+addpath('../SID/functions')
+addpath('../auxiliary_functions')
 
 %%% Number of Simulations
 n_sim=100;

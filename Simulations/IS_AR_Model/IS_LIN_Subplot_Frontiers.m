@@ -1,8 +1,8 @@
 %% Create the 2x1 subplot for Frontiers Papers
-clear all; close all; clc;
+clc; clear all; close all hidden
 
 %% Import Functions
-addpath('functions')
+addpath('../auxiliary_functions')
 
 % Load & Save Results of the Surrogates for Significance and Non Linear
 % Dynamics
@@ -31,20 +31,20 @@ htmlGray = [128 128 128]/255;
 % Figure
 fig=figure;
 fig.WindowState='maximized';
-subplot_tight(1,2,1,[0.13 0.06]);
+subplot_tight(1,2,1,[0.16 0.08]);
 errorbar(x, median(IS_Values), median(IS_Values)-quantile(IS_Values,0.05,1),quantile(IS_Values,0.95,1)-median(IS_Values),'LineWidth',2,'Color','k','DisplayName','KNN');
 hold on;
 plot(x,IS_Values_Th,'LineWidth',2,'Color',htmlGray,'DisplayName','Theoretical Value');
 hold off;
 legend('Box','off','Location','best');
-ylabel('S_X','FontWeight','bold');
+ylabel('S_X [nats]','FontWeight','bold');
 xlabel('\rho_x','FontWeight','bold');
 xticks(0:0.05:0.95);
 xlim([-0.02 0.97]);
 ax=gca;
 ax.FontSize=21;
 
-subplot_tight(1,2,2,[0.13 0.06]);
+subplot_tight(1,2,2,[0.16 0.08]);
 Data=[Significant_Surr_Results NonLinear_Surr_Results];
 bar(x,Data);
 ylim([0 110]);

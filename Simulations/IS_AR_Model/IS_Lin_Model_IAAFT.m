@@ -1,8 +1,8 @@
-clc; clear all; close all
+clc; clear all; close all hidden
 
 %% Import Functions
-addpath('..\functions')
-
+addpath('../SID/functions')
+addpath('../auxiliary_functions')
 
 %% parameters
 signal_length=1000; % length of simulated time series

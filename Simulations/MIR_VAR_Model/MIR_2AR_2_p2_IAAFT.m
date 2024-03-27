@@ -1,10 +1,9 @@
 %% Hypothesis 02a - Underlying dynamic is linear in 2AR model (bivariate case)
-clc
-clear
-close all force
+clc; clear; close all hidden
 
-%% imports
-addpath('../../functions')
+%% Import Functions
+addpath('../SID/functions')
+addpath('../auxiliary_functions')
 
 
 %% parameters

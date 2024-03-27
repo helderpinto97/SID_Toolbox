@@ -1,6 +1,8 @@
-clc; clear all; close all;
+clc; clear all; close all hidden
+
 %% Import Functions
-addpath('../functions')
+addpath('../SID/functions')
+addpath('../auxiliary_functions')
 
 %% Parameters
 signal_length=1000; % length of simulated time series
@@ -47,7 +49,7 @@ for r_idx = 1:length(r_arr)
     [Am,Su]=var_simulations(M,par); % parameters
     
     ret = surr_CElinVAR1(Am,Su,2);
-    linSE_CE(r_idx) = ret.Sy;
+    linSE_CE(r_idx) = ret.Hy-ret.Hy_y;
 
     for sig_idx = 1:num_signals
     %% Calculate Information Storage - linear/nonparametric estimator
@@ -91,7 +93,6 @@ xlabel('$$\rho$$','Interpreter','latex','FontSize',25)
 ylabel('$$IS\ [nats]$$','Interpreter','latex','FontSize',25)
 ax=gca;
 ax.FontSize=20;
-% title('$$linear\ Model: Information\ Storage\ - decoupled\ present|past$$','Interpreter','latex','FontSize',25)
 
 figure('WindowState', 'maximized');
 bar(x, sum(knnSE_significance,2));

@@ -1,8 +1,8 @@
-clear all; close all; clc;
+clc; clear; close all hidden
 
-%% Paths
-
-addpath('../functions')
+%% Import Functions
+addpath('../SID/functions')
+addpath('../auxiliary_functions')
 
 %% Parameters
 delta=0:0.2:3;
