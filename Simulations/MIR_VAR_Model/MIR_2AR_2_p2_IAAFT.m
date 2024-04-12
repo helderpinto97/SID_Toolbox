@@ -9,12 +9,12 @@ addpath('../../functions')
 
 %% parameters
 M=2;
-p=3;
+p=2;
 pmax = 20;
 par.poles=([0.3 0.3; 0.3 0.1]); % Oscillations
 par.Su=[1 1]; %variance of innovation processes
 
-nit = 50; % iaafft iteration number
+nit = 7; % iaafft iteration number
 
 num_signals = 100;
 num_surrogates = 100;
