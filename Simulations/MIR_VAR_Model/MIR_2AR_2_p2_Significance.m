@@ -1,17 +1,18 @@
-clc; clear; close all hidden
+clc
+clear
+close all force
 
-%% Import Functions
-addpath('../SID/functions')
-addpath('../auxiliary_functions')
+%% imports
+addpath('../../functions')
 
 %% parameters
 M=2;
-p=3;
+p=2;
 pmax = 20;
 par.poles=([0.3 0.3; 0.3 0.1]); % Oscillations
 par.Su=[1 1]; %variance of innovation processes
 
-nit = 50; % iaafft iteration number
+nit = 7; % iaafft iteration number
 
 num_signals = 100;
 num_surrogates = 100;
@@ -20,7 +21,7 @@ fs=1; % sampling frequency
 nfft=1001; % number of points on frequency axis (total)
 
 % embedding vector
-m=2;
+m=p.*ones(1,M);
 tau=ones(1,M);
 VL=surr_SetLag(m,tau);
 k=10; % n. of neighbors
