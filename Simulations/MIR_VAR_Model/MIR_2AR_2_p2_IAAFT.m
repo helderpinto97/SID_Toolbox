@@ -4,7 +4,8 @@ clear
 close all force
 
 %% imports
-addpath('../../functions')
+addpath('../SID/functions')
+addpath('../auxilary_functions')
 
 
 %% parameters
