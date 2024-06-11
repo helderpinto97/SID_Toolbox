@@ -28,4 +28,4 @@ Along with the demo scripts, all the codes used in simulations to test the propo
 
 * Faes, L., Nollo, G., and Porta, A. (2011). Information domain approach to the investigation of cardiovascular, cardio-pulmonary, and vasculo-pulmonary causal couplings. Frontiers in Physiology 2 NOV. doi:10.3389/fphys.2011.00080
 
-* Pinto, H., Lazic, I., Antonacci, Y., Pernice, R., Gu, D., Barà, C., Faes, L., Rocha, A.P. (2024) Testing Dynamic Correlations and Nonlinearity in Bivariate Time Series through Information Measures and Surrogate Data Analysis. _Submitted to Frontiers in Network Physiology_.
+* Pinto, H., Lazic, I., Antonacci, Y., Pernice, R., Gu, D., Barà, C., ... & Rocha, A. P. (2024). Testing dynamic correlations and nonlinearity in bivariate time series through information measures and surrogate data analysis. Frontiers in Network Physiology, 4, 1385421.
